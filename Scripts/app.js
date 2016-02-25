@@ -110,9 +110,11 @@ var IntroParagraph = function() {
         var email = document.getElementById("email");
         var comments = document.getElementById("comments")
         var submitInfo = document.getElementById("submitInfo");
+        submitInfo.pre
         
 // Create Event Listener for Submit Button
-        submitInfo.addEventListener("click", function(){
+        submitInfo.addEventListener("click", function(event){
+            event.preventDefault();
             console.log("First Name: " + firstName.value);
             console.log("Last Name: " + lastName.value);
             console.log("Email: " + email.value);
