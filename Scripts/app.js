@@ -110,7 +110,6 @@ var IntroParagraph = function() {
         var email = document.getElementById("email");
         var comments = document.getElementById("comments")
         var submitInfo = document.getElementById("submitInfo");
-        submitInfo.pre
         
         submitInfo.addEventListener("click", function(event){
             event.preventDefault();
